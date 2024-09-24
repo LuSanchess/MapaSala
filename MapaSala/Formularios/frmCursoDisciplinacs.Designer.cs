@@ -54,7 +54,7 @@ namespace MapaSala.Formularios
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(196, 36);
+            this.label2.Location = new System.Drawing.Point(180, 36);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 13);
             this.label2.TabIndex = 3;
@@ -62,16 +62,17 @@ namespace MapaSala.Formularios
             // 
             // CbxCursos
             // 
+            this.CbxCursos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.CbxCursos.FormattingEnabled = true;
-            this.CbxCursos.Location = new System.Drawing.Point(199, 63);
+            this.CbxCursos.Location = new System.Drawing.Point(183, 65);
             this.CbxCursos.Name = "CbxCursos";
             this.CbxCursos.Size = new System.Drawing.Size(121, 21);
             this.CbxCursos.TabIndex = 4;
             // 
             // btnAdicionar
             // 
-            this.btnAdicionar.BackColor = System.Drawing.Color.LavenderBlush;
-            this.btnAdicionar.Location = new System.Drawing.Point(579, 63);
+            this.btnAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnAdicionar.Location = new System.Drawing.Point(495, 63);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(75, 23);
             this.btnAdicionar.TabIndex = 5;
@@ -81,17 +82,18 @@ namespace MapaSala.Formularios
             // 
             // dtCursoDisciplina
             // 
-            this.dtCursoDisciplina.BackgroundColor = System.Drawing.Color.White;
+            this.dtCursoDisciplina.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dtCursoDisciplina.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtCursoDisciplina.GridColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dtCursoDisciplina.Location = new System.Drawing.Point(12, 174);
+            this.dtCursoDisciplina.Location = new System.Drawing.Point(28, 174);
             this.dtCursoDisciplina.Name = "dtCursoDisciplina";
-            this.dtCursoDisciplina.Size = new System.Drawing.Size(776, 264);
+            this.dtCursoDisciplina.Size = new System.Drawing.Size(542, 264);
             this.dtCursoDisciplina.TabIndex = 6;
             this.dtCursoDisciplina.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtCursoDisciplina_CellContentClick);
             // 
             // CbxDisciplinas
             // 
+            this.CbxDisciplinas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.CbxDisciplinas.FormattingEnabled = true;
             this.CbxDisciplinas.Location = new System.Drawing.Point(28, 63);
             this.CbxDisciplinas.Name = "CbxDisciplinas";
@@ -100,6 +102,7 @@ namespace MapaSala.Formularios
             // 
             // CbxPeriodos
             // 
+            this.CbxPeriodos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.CbxPeriodos.FormattingEnabled = true;
             this.CbxPeriodos.Items.AddRange(new object[] {
             "1°Ano",
@@ -108,7 +111,7 @@ namespace MapaSala.Formularios
             "1°Modulo",
             "2°Modulo",
             "3°Modulo"});
-            this.CbxPeriodos.Location = new System.Drawing.Point(388, 63);
+            this.CbxPeriodos.Location = new System.Drawing.Point(344, 65);
             this.CbxPeriodos.Name = "CbxPeriodos";
             this.CbxPeriodos.Size = new System.Drawing.Size(121, 21);
             this.CbxPeriodos.TabIndex = 8;
@@ -116,14 +119,16 @@ namespace MapaSala.Formularios
             // TxtPeriodo
             // 
             this.TxtPeriodo.AutoSize = true;
-            this.TxtPeriodo.Location = new System.Drawing.Point(385, 39);
+            this.TxtPeriodo.Location = new System.Drawing.Point(341, 36);
             this.TxtPeriodo.Name = "TxtPeriodo";
             this.TxtPeriodo.Size = new System.Drawing.Size(43, 13);
             this.TxtPeriodo.TabIndex = 9;
             this.TxtPeriodo.Text = "Periodo";
+            this.TxtPeriodo.Click += new System.EventHandler(this.TxtPeriodo_Click);
             // 
             // txtPesquisa
             // 
+            this.txtPesquisa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtPesquisa.Location = new System.Drawing.Point(28, 134);
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(209, 20);
@@ -143,7 +148,8 @@ namespace MapaSala.Formularios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(696, 450);
             this.Controls.Add(this.lblPesquisar);
             this.Controls.Add(this.txtPesquisa);
             this.Controls.Add(this.TxtPeriodo);

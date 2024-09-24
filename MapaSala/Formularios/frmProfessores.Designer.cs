@@ -48,16 +48,17 @@ namespace MapaSala.Formularios
             // 
             // numId
             // 
+            this.numId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.numId.Location = new System.Drawing.Point(22, 46);
             this.numId.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.numId.Name = "numId";
-            this.numId.Size = new System.Drawing.Size(97, 27);
+            this.numId.Size = new System.Drawing.Size(51, 27);
             this.numId.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 14);
+            this.label1.Location = new System.Drawing.Point(19, 26);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(23, 19);
@@ -66,16 +67,17 @@ namespace MapaSala.Formularios
             // 
             // txtNomeCompleto
             // 
-            this.txtNomeCompleto.Location = new System.Drawing.Point(172, 45);
+            this.txtNomeCompleto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtNomeCompleto.Location = new System.Drawing.Point(107, 45);
             this.txtNomeCompleto.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txtNomeCompleto.Name = "txtNomeCompleto";
-            this.txtNomeCompleto.Size = new System.Drawing.Size(143, 27);
+            this.txtNomeCompleto.Size = new System.Drawing.Size(221, 27);
             this.txtNomeCompleto.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(168, 21);
+            this.label2.Location = new System.Drawing.Point(103, 22);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 19);
@@ -84,7 +86,8 @@ namespace MapaSala.Formularios
             // 
             // txtApelido
             // 
-            this.txtApelido.Location = new System.Drawing.Point(340, 46);
+            this.txtApelido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtApelido.Location = new System.Drawing.Point(357, 45);
             this.txtApelido.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txtApelido.Name = "txtApelido";
             this.txtApelido.Size = new System.Drawing.Size(153, 27);
@@ -93,7 +96,7 @@ namespace MapaSala.Formularios
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(336, 22);
+            this.label3.Location = new System.Drawing.Point(353, 22);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 19);
@@ -102,10 +105,10 @@ namespace MapaSala.Formularios
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(553, 22);
+            this.btnSalvar.Location = new System.Drawing.Point(556, 44);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(114, 28);
+            this.btnSalvar.Size = new System.Drawing.Size(108, 28);
             this.btnSalvar.TabIndex = 6;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -114,7 +117,7 @@ namespace MapaSala.Formularios
             // dtGridProfessores
             // 
             this.dtGridProfessores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtGridProfessores.BackgroundColor = System.Drawing.Color.White;
+            this.dtGridProfessores.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dtGridProfessores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtGridProfessores.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dtGridProfessores.Location = new System.Drawing.Point(15, 211);
@@ -127,7 +130,7 @@ namespace MapaSala.Formularios
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(687, 21);
+            this.btnLimpar.Location = new System.Drawing.Point(556, 93);
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(108, 29);
@@ -138,10 +141,10 @@ namespace MapaSala.Formularios
             // 
             // btnexcluir
             // 
-            this.btnexcluir.Location = new System.Drawing.Point(553, 59);
+            this.btnexcluir.Location = new System.Drawing.Point(687, 93);
             this.btnexcluir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnexcluir.Name = "btnexcluir";
-            this.btnexcluir.Size = new System.Drawing.Size(114, 26);
+            this.btnexcluir.Size = new System.Drawing.Size(104, 29);
             this.btnexcluir.TabIndex = 9;
             this.btnexcluir.Text = "Excluir";
             this.btnexcluir.UseVisualStyleBackColor = true;
@@ -150,10 +153,10 @@ namespace MapaSala.Formularios
             // btneditar
             // 
             this.btneditar.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btneditar.Location = new System.Drawing.Point(687, 60);
+            this.btneditar.Location = new System.Drawing.Point(687, 44);
             this.btneditar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btneditar.Name = "btneditar";
-            this.btneditar.Size = new System.Drawing.Size(104, 26);
+            this.btneditar.Size = new System.Drawing.Size(104, 29);
             this.btneditar.TabIndex = 10;
             this.btneditar.Text = "Editar";
             this.btneditar.UseVisualStyleBackColor = true;
@@ -161,6 +164,7 @@ namespace MapaSala.Formularios
             // 
             // txtpesquisa
             // 
+            this.txtpesquisa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtpesquisa.Location = new System.Drawing.Point(22, 156);
             this.txtpesquisa.Name = "txtpesquisa";
             this.txtpesquisa.Size = new System.Drawing.Size(342, 27);
@@ -181,6 +185,7 @@ namespace MapaSala.Formularios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(810, 430);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtpesquisa);

@@ -36,8 +36,8 @@ namespace MapaSala.Formularios
             SalasEntidade d = new SalasEntidade();
             d.Id = Convert.ToInt32(numId.Value);
             d.Nome = txtNome.Text;
-            d.NumeroCadeiras = Convert.ToInt32(txtNumCadeira.Value);
-            d.NumeroComputadores = Convert.ToInt32(txtNumPc.Value);
+            d.NumeroCadeiras = Convert.ToInt32(txtNumCadeira.Text);
+            d.NumeroComputadores = Convert.ToInt32(txtNumPc.Text);
             d.IsLab = chkIsLab.Checked;
             d.Disponivel = chkDisponivel.Checked;
 
@@ -78,8 +78,8 @@ namespace MapaSala.Formularios
             DataGridViewRow editar = dtGridSalas.Rows[LinhaSelecionada];
             editar.Cells[0].Value = numId.Value;
             editar.Cells[1].Value = txtNome.Text;
-            editar.Cells[3].Value = Convert.ToInt32(txtNumCadeira.Value);
-            editar.Cells[2].Value = Convert.ToInt32(txtNumPc.Value);
+            editar.Cells[3].Value = Convert.ToInt32(txtNumCadeira.Text);
+            editar.Cells[2].Value = Convert.ToInt32(txtNumPc.Text);
             editar.Cells[4].Value = Convert.ToBoolean(chkIsLab.Checked);
             editar.Cells[5].Value = Convert.ToBoolean(chkDisponivel.Checked);
 
@@ -89,19 +89,24 @@ namespace MapaSala.Formularios
 
         private void dtGridSalas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            LinhaSelecionada = e.RowIndex;
-            txtNome.Text = dtGridSalas.Rows[LinhaSelecionada].Cells[1].Value.ToString();
-            txtNumCadeira.Value = Convert.ToInt32(dtGridSalas.Rows[LinhaSelecionada].Cells[3].Value);
-            txtNumPc.Value = Convert.ToInt32(dtGridSalas.Rows[LinhaSelecionada].Cells[2].Value);
-            chkIsLab.Checked = Convert.ToBoolean(dtGridSalas.Rows[LinhaSelecionada].Cells[4].Value);
-            chkDisponivel.Checked = Convert.ToBoolean(dtGridSalas.Rows[LinhaSelecionada].Cells[5].Value);
-            numId.Value = Convert.ToInt32(dtGridSalas.Rows[LinhaSelecionada].Cells[0].Value);
+            //LinhaSelecionada = e.RowIndex;
+            //txtNome.Text = dtGridSalas.Rows[LinhaSelecionada].Cells[1].Value.ToString();
+            //txtNumCadeira.Text = (dtGridSalas.Rows[LinhaSelecionada].Cells[3].Value);
+            //txtNumPc.Text = Convert.ToInt32(dtGridSalas.Rows[LinhaSelecionada].Cells[2].Value);
+            //chkIsLab.Checked = Convert.ToBoolean(dtGridSalas.Rows[LinhaSelecionada].Cells[4].Value);
+            //chkDisponivel.Checked = Convert.ToBoolean(dtGridSalas.Rows[LinhaSelecionada].Cells[5].Value);
+            //numId.Value = Convert.ToInt32(dtGridSalas.Rows[LinhaSelecionada].Cells[0].Value);
 
         }
 
         private void txtPesquisa_TextChanged(object sender, EventArgs e)
         {
             dtGridSalas.DataSource = dao.Pesquisar(txtPesquisa.Text);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

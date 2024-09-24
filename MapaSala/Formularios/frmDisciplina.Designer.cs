@@ -48,8 +48,8 @@ namespace MapaSala.Formularios
             // 
             // btnSalvar
             // 
-            this.btnSalvar.BackColor = System.Drawing.Color.LavenderBlush;
-            this.btnSalvar.Location = new System.Drawing.Point(572, 21);
+            this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSalvar.Location = new System.Drawing.Point(416, 40);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(5);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(99, 35);
@@ -60,24 +60,26 @@ namespace MapaSala.Formularios
             // 
             // txtNomeDisciplina
             // 
-            this.txtNomeDisciplina.Location = new System.Drawing.Point(208, 46);
+            this.txtNomeDisciplina.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtNomeDisciplina.Location = new System.Drawing.Point(85, 46);
             this.txtNomeDisciplina.Margin = new System.Windows.Forms.Padding(5);
             this.txtNomeDisciplina.Name = "txtNomeDisciplina";
-            this.txtNomeDisciplina.Size = new System.Drawing.Size(144, 23);
+            this.txtNomeDisciplina.Size = new System.Drawing.Size(202, 23);
             this.txtNomeDisciplina.TabIndex = 1;
             // 
             // txtSigla
             // 
-            this.txtSigla.Location = new System.Drawing.Point(379, 46);
+            this.txtSigla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtSigla.Location = new System.Drawing.Point(310, 46);
             this.txtSigla.Margin = new System.Windows.Forms.Padding(5);
             this.txtSigla.Name = "txtSigla";
-            this.txtSigla.Size = new System.Drawing.Size(124, 23);
+            this.txtSigla.Size = new System.Drawing.Size(73, 23);
             this.txtSigla.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(374, 21);
+            this.label1.Location = new System.Drawing.Point(307, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 17);
@@ -87,7 +89,7 @@ namespace MapaSala.Formularios
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(203, 21);
+            this.label2.Location = new System.Drawing.Point(82, 20);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 17);
@@ -106,10 +108,11 @@ namespace MapaSala.Formularios
             // 
             // numId
             // 
+            this.numId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.numId.Location = new System.Drawing.Point(24, 46);
             this.numId.Margin = new System.Windows.Forms.Padding(5);
             this.numId.Name = "numId";
-            this.numId.Size = new System.Drawing.Size(147, 23);
+            this.numId.Size = new System.Drawing.Size(40, 23);
             this.numId.TabIndex = 6;
             // 
             // dtGridDisciplina
@@ -117,9 +120,9 @@ namespace MapaSala.Formularios
             this.dtGridDisciplina.AllowUserToAddRows = false;
             this.dtGridDisciplina.AllowUserToDeleteRows = false;
             this.dtGridDisciplina.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtGridDisciplina.BackgroundColor = System.Drawing.Color.White;
+            this.dtGridDisciplina.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dtGridDisciplina.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtGridDisciplina.Location = new System.Drawing.Point(14, 212);
+            this.dtGridDisciplina.Location = new System.Drawing.Point(14, 171);
             this.dtGridDisciplina.Margin = new System.Windows.Forms.Padding(5);
             this.dtGridDisciplina.Name = "dtGridDisciplina";
             this.dtGridDisciplina.ReadOnly = true;
@@ -130,8 +133,8 @@ namespace MapaSala.Formularios
             // 
             // btnLimpar
             // 
-            this.btnLimpar.BackColor = System.Drawing.Color.LavenderBlush;
-            this.btnLimpar.Location = new System.Drawing.Point(572, 66);
+            this.btnLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnLimpar.Location = new System.Drawing.Point(535, 39);
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(5);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(99, 35);
@@ -142,8 +145,8 @@ namespace MapaSala.Formularios
             // 
             // btnExcluir
             // 
-            this.btnExcluir.BackColor = System.Drawing.Color.LavenderBlush;
-            this.btnExcluir.Location = new System.Drawing.Point(681, 21);
+            this.btnExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnExcluir.Location = new System.Drawing.Point(747, 85);
             this.btnExcluir.Margin = new System.Windows.Forms.Padding(5);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(101, 35);
@@ -154,8 +157,8 @@ namespace MapaSala.Formularios
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.button1.Location = new System.Drawing.Point(681, 66);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button1.Location = new System.Drawing.Point(654, 40);
             this.button1.Margin = new System.Windows.Forms.Padding(5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(101, 35);
@@ -166,7 +169,8 @@ namespace MapaSala.Formularios
             // 
             // txtPesquisa
             // 
-            this.txtPesquisa.Location = new System.Drawing.Point(24, 172);
+            this.txtPesquisa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtPesquisa.Location = new System.Drawing.Point(24, 131);
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(207, 23);
             this.txtPesquisa.TabIndex = 11;
@@ -175,7 +179,7 @@ namespace MapaSala.Formularios
             // lblPesquisa
             // 
             this.lblPesquisa.AutoSize = true;
-            this.lblPesquisa.Location = new System.Drawing.Point(21, 152);
+            this.lblPesquisa.Location = new System.Drawing.Point(21, 111);
             this.lblPesquisa.Name = "lblPesquisa";
             this.lblPesquisa.Size = new System.Drawing.Size(76, 17);
             this.lblPesquisa.TabIndex = 12;
@@ -185,6 +189,7 @@ namespace MapaSala.Formularios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(850, 442);
             this.Controls.Add(this.lblPesquisa);
             this.Controls.Add(this.txtPesquisa);

@@ -68,5 +68,10 @@ namespace MapaSala.Formularios
         {
 
         }
+
+        private void TxtPeriodo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
