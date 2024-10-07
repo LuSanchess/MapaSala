@@ -75,11 +75,7 @@ namespace MapaSala.Formularios
             LimparCampos();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void btneditar(object sender, EventArgs e)
         {
             DataGridViewRow editar = dtGridDisciplina.Rows[LinhaSelecionada];
@@ -98,8 +94,15 @@ namespace MapaSala.Formularios
 
         private void dtGridDisciplina_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            frmEditarDisciplina editar = new frmEditarDisciplina();
-            editar.ShowDialog();
+            if{
+                int Id = Convert.ToInt32(
+                    dtGridDisciplina.Rows[e.RowIndex].Cells[0].Value);
+                frmEditarDisciplina editar = new frmEditarDisciplina(Id);
+                editar.ShowDialog();
+            }
+   
+
         }
+
     }
 }

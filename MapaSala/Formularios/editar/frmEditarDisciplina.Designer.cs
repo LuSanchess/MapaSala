@@ -34,7 +34,8 @@ namespace MapaSala.Formularios.editar
             this.label1 = new System.Windows.Forms.Label();
             this.txtSigla = new System.Windows.Forms.TextBox();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chkAtivo = new System.Windows.Forms.CheckBox();
+            this.label_Id = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtNomeDisciplina
@@ -86,30 +87,40 @@ namespace MapaSala.Formularios.editar
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
             // 
-            // checkBox1
+            // chkAtivo
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(33, 183);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(50, 17);
-            this.checkBox1.TabIndex = 13;
-            this.checkBox1.Text = "Ativo";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.chkAtivo.AutoSize = true;
+            this.chkAtivo.Location = new System.Drawing.Point(33, 183);
+            this.chkAtivo.Name = "chkAtivo";
+            this.chkAtivo.Size = new System.Drawing.Size(50, 17);
+            this.chkAtivo.TabIndex = 13;
+            this.chkAtivo.Text = "Ativo";
+            this.chkAtivo.UseVisualStyleBackColor = true;
+            // 
+            // label_Id
+            // 
+            this.label_Id.AutoSize = true;
+            this.label_Id.Location = new System.Drawing.Point(25, 21);
+            this.label_Id.Name = "label_Id";
+            this.label_Id.Size = new System.Drawing.Size(16, 13);
+            this.label_Id.TabIndex = 15;
+            this.label_Id.Text = "Id";
             // 
             // frmEditarDisciplina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(277, 290);
-            this.Controls.Add(this.checkBox1);
+            this.ClientSize = new System.Drawing.Size(355, 290);
+            this.Controls.Add(this.label_Id);
+            this.Controls.Add(this.chkAtivo);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.txtSigla);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNomeDisciplina);
             this.Name = "frmEditarDisciplina";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEditarDisciplina";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -122,6 +133,7 @@ namespace MapaSala.Formularios.editar
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSigla;
         private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkAtivo;
+        private System.Windows.Forms.Label label_Id;
     }
 }
