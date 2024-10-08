@@ -19,10 +19,9 @@ namespace MapaSala.Formularios.editar
         public frmEditarDisciplina(int DisciplinaId)
         {
             InitializeComponent();
-            string query = "select Id, Nome, Siga, Ativo" + "from Disciplina where Id = @Id";
-        
+            string query = "select Id, Nome, Sigla, Ativo from Disciplinas where Id = @Id";
+            Conexao = new SqlConnection(LinhaConexao);
             Conexao.Open();
-            string query = "SELECT * FROM DISCIPLINAS ORDER BY Id desc";
             SqlCommand Comando = new SqlCommand(query, Conexao);
             Comando.Parameters.Add(new SqlParameter("@Id", DisciplinaId));
             SqlDataReader Leitura = Comando.ExecuteReader();
@@ -41,7 +40,58 @@ namespace MapaSala.Formularios.editar
             }
             Conexao.Close();
         }
+       
+       
 
-    
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            string query = "update Disciplinas set Nome = @nome, Sigla = @sigla, Ativo = @ativo WHERE  Id = @id";
+
+            Conexao = new SqlConnection(LinhaConexao);
+            Conexao.Open();
+
+            SqlCommand comando = new SqlCommand(query, Conexao);
+
+            comando.Parameters.Add(new SqlParameter("@sigla", txtSigla.Text));
+            comando.Parameters.Add(new SqlParameter("@nome", txtNomeDisciplina.Text));
+            comando.Parameters.Add(new SqlParameter("@ativo", chkAtivo.Checked));
+            comando.Parameters.Add(new SqlParameter("@id", label_Id.Text));
+
+            int resposta = comando.ExecuteNonQuery();
+
+            if (resposta == 1)
+            {
+                MessageBox.Show("Disciplina Atualizada com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Erro ao atualizar", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            string query = "Delete from Disciplinas WHERE  Id = @id";
+
+            Conexao = new SqlConnection(LinhaConexao);
+            Conexao.Open();
+
+            SqlCommand comando = new SqlCommand(query, Conexao);
+            comando.Parameters.Add(new SqlParameter("@id", label_Id.Text));
+            int resposta = comando.ExecuteNonQuery();
+
+            if (resposta == 1)
+            {
+                MessageBox.Show("Disciplina Excluída com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Erro ao excluir", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
     }
 }

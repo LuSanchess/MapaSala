@@ -36,6 +36,8 @@ namespace MapaSala.Formularios.editar
             this.btnSalvar = new System.Windows.Forms.Button();
             this.chkAtivo = new System.Windows.Forms.CheckBox();
             this.label_Id = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtNomeDisciplina
@@ -79,13 +81,14 @@ namespace MapaSala.Formularios.editar
             // btnSalvar
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnSalvar.Location = new System.Drawing.Point(145, 236);
+            this.btnSalvar.Location = new System.Drawing.Point(33, 226);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(5);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(99, 35);
             this.btnSalvar.TabIndex = 12;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // chkAtivo
             // 
@@ -106,12 +109,33 @@ namespace MapaSala.Formularios.editar
             this.label_Id.TabIndex = 15;
             this.label_Id.Text = "Id";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(106, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "label3";
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Location = new System.Drawing.Point(140, 226);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(90, 35);
+            this.btnExcluir.TabIndex = 17;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
             // frmEditarDisciplina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(355, 290);
+            this.ClientSize = new System.Drawing.Size(262, 290);
+            this.Controls.Add(this.btnExcluir);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label_Id);
             this.Controls.Add(this.chkAtivo);
             this.Controls.Add(this.btnSalvar);
@@ -122,6 +146,7 @@ namespace MapaSala.Formularios.editar
             this.Name = "frmEditarDisciplina";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEditarDisciplina";
+
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,5 +160,7 @@ namespace MapaSala.Formularios.editar
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.CheckBox chkAtivo;
         private System.Windows.Forms.Label label_Id;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnExcluir;
     }
 }
